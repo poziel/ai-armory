@@ -1,46 +1,36 @@
-# AI resources
+<p align="center">
+  <img src="logo.svg" alt="Gradient spark symbol for the AI resources" width="128" height="128">
+</p>
 
-Reusable skills, instruction templates, sub-agents, MCP servers, and scripts for AI-assisted development. Find [the AI resources on GitHub](https://github.com/poziel/ai-resources).
+<h1 align="center">AI resources</h1>
 
-## Structure
+<p align="center">
+  Reusable skills, instructions, and coding standards for AI-assisted development.
+</p>
 
-| Directory | Contents |
+My personal collection of skills and shared instructions for AI-assisted development. I keep [the AI resources](https://github.com/poziel/ai-resources) here to reuse workflows and conventions across my projects.
+
+## Skills
+
+| Skill | Purpose |
 | --- | --- |
-| [skills/](skills/) | Reusable skills with instructions and supporting resources. |
-| [instructions/](instructions/) | Reusable instruction fragments and templates for `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md`. |
-| [agents/](agents/) | Sub-agent definitions for specialized roles and workflows. |
-| [mcp-servers/](mcp-servers/) | Custom Model Context Protocol servers, when needed. |
-| [scripts/](scripts/) | Utilities for managing, validating, or installing these assets. |
+| [Git branch](skills/git-branch/SKILL.md) | Branch naming and creation using Conventional Branch conventions. |
+| [Git commit](skills/git-commit/SKILL.md) | Conventional Commit messages with consistent wording. |
+| [Git changelog](skills/git-changelog/SKILL.md) | Changelogs and release notes based on verified Git history. |
+| [Git review branch](skills/git-review-branch/SKILL.md) | Branch and worktree reviews, with optional VS Code integration. |
+| [README writer](skills/readme-writer/SKILL.md) | README writing and review, including structure, artwork, and setup accuracy. |
 
-## Conventions
+## Shared instructions
 
-- Use lowercase, hyphen-separated names for folders and files, except filenames required by a tool, such as `SKILL.md` or `AGENTS.md`.
-- Keep each asset self-contained and document its purpose, supported tools, setup, and usage.
-- Keep tool-specific formats explicit. Skills, instruction files, and agent definitions may need different formats for different tools.
-- Use `{{PLACEHOLDER_NAME}}` for template values and document how to replace them.
-- Keep secrets, machine-specific paths, and generated files out of version control.
+[Coding standards](instructions/coding-standards/README.md) shared across my projects:
 
-Start with the guide in the relevant directory. Add dependencies and automation only when an asset needs them.
+- [Markdown](instructions/coding-standards/markdown.md)
+- [TypeScript and JavaScript](instructions/coding-standards/typescript.md)
+- [Vue components](instructions/coding-standards/vue.md)
+- [HTML and templates](instructions/coding-standards/html.md)
+- [CSS and SCSS](instructions/coding-standards/css.md)
+- [Rust](instructions/coding-standards/rust.md)
 
-## Install
+## Utilities
 
-Requires PowerShell 7:
-
-```powershell
-Copy-Item .env.example .env # First setup only; preserve an existing .env.
-# Set SKILLS_DIR in .env to the directory used by your AI tools.
-./Install.ps1 -DryRun
-./Install.ps1
-```
-
-The root installer currently installs skills. Skills are linked to this checkout, so edits take effect through the installed links. Set `SKILLS_DIR` explicitly in `.env` or your environment; no AI tool or destination is assumed. To link skills into several tools' directories, run the skill installer once per destination using `-SkillsPath`.
-
-Settings also reserve destinations for agents, instructions, MCP servers, and scripts. Their installation behavior will be defined later. Instruction fragments will eventually be assembled into the files each tool expects. See the [installer guide](scripts/README.md#install-skills) for configuration and safe migration.
-
-## Coding standards
-
-Shared language guides live in `instructions/coding-standards/`. Configure a
-project list, then preview or update all selected checkouts with
-`scripts/Sync-CodingStandards.ps1`. This copies ordinary files suitable for Git;
-it does not generate agent instructions. See the
-[distribution guide](instructions/coding-standards-distribution.md).
+[PowerShell scripts](scripts/README.md) for linking skills and keeping project copies of the coding standards in sync.

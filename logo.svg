@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="64 64 384 384" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Spark Core — clean AI logo</title>
+  <desc id="description">A softly rounded square with a four-point intelligence spark cut into its center. Teal, blue, violet, and pink gradient on a transparent background.</desc>
+  <defs>
+    <linearGradient id="spectrum" x1="92" y1="64" x2="420" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10D2C5" />
+      <stop offset="0.36" stop-color="#309BF5" />
+      <stop offset="0.69" stop-color="#7953ED" />
+      <stop offset="1" stop-color="#DD4AC8" />
+    </linearGradient>
+  </defs>
+  <g fill="url(#spectrum)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M196 112H316C368 112 400 144 400 196V316C400 368 368 400 316 400H196C144 400 112 368 112 316V196C112 144 144 112 196 112Z M256 162C260 162 263 166 264 173C274 220 292 238 339 248C354 251 354 261 339 264C292 274 274 292 264 339C261 354 251 354 248 339C238 292 220 274 173 264C158 261 158 251 173 248C220 238 238 220 248 173C249 166 252 162 256 162Z" />
+  </g>
+</svg>
