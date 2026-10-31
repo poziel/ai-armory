@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "name": "example-vue-app",
+      "path": "../example-vue-app",
+      "destination": "docs/contributing/coding-standards",
+      "languages": ["vue", "rust"]
+    },
+    {
+      "name": "example-js-library",
+      "path": "../example-js-library",
+      "destination": "docs/contributing/coding-standards",
+      "languages": ["javascript"]
+    }
+  ]
+}

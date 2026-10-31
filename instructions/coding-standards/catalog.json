@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "always": [".gitattributes", "README.md", "markdown.md"],
+  "languages": {
+    "typescript": ["typescript.md"],
+    "javascript": ["typescript.md"],
+    "vue": ["vue.md", "typescript.md", "html.md", "css.md"],
+    "html": ["html.md"],
+    "css": ["css.md"],
+    "scss": ["css.md"],
+    "rust": ["rust.md"],
+    "markdown": ["markdown.md"],
+    "mdx": ["markdown.md"]
+  }
+}

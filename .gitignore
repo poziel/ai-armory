@@ -24,3 +24,6 @@ coverage/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Local project checkout locations for shared coding standards
+/coding-standards.projects.json
